@@ -1,24 +1,61 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名
 
-Things you may want to cover:
+**OK Voice**
+ 
+"OK Voice"は音声認識機能を利用した、ブックマークアプリです。
+ユーザー各々が自由に登録したキーワードをアプリに向かって話すことで、そのキーワードに
+紐付いたURLにアクセスできるといったものです。
+ 
+# デモ
 
-* Ruby version
+例えば、ボタンを押して『天気予報』と喋りかけると
+下記のGIFのように登録済みの天気予報のサイトが出現します。
 
-* System dependencies
+https://gyazo.com/304c73a79a75dc3b23741956837e92e7
 
-* Configuration
+登録していない合言葉を喋りかけると、その内容のテキストが
+そのまま出現します。
 
-* Database creation
+https://gyazo.com/ca80b75b3e02940c81655da8217d7d16
 
-* Database initialization
+# アプリURL
 
-* How to run the test suite
+https://shrouded-badlands-97942.herokuapp.com/
 
-* Services (job queues, cache servers, search engines, etc.)
+# テーマを決めた理由
 
-* Deployment instructions
+javascriptを使用した、新しいことに挑戦してみたかったからです。
+その中で音声認識に対する自身のイメージが、より先進的で難しそうだと考えたからです。
 
-* ...
+# 現在の実装機能
+
+* 音声認識機能
+* ユーザー登録、ログイン機能
+* キーワード、URL登録、編集、削除機能
+* ユーザーに紐付く、キーワード、URL一覧表示
+* キーワードに対応するURLに自動アクセスする機能
+
+# 今後の実装機能
+
+現状、音声認識機能は実装済みですがテキストエディタに直に書いたキーワードに対応する処理と、喋った内容をテキスト表示することしかできない状態です。
+（例えば、『天気予報』と喋りかけると、天気予報サイトにアクセスするように直書きしてある。）
+現在は喋った内容と一致する登録済みのキーワードをサーバー上で自動検索し、それに紐付くURLに自動アクセスする機能を実装中です。
+
+# 言語・フレームワーク
+ 
+* Ruby
+* Ruby on Rails
+* javascript
+* haml
+* scss
+
+# バージョン
+
+Ruby 2.5.1
+Rails 5.2.4
+ 
+# 制作
+ 
+* tomohiro1105
