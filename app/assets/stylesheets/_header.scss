@@ -1,0 +1,53 @@
+.header{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  line-height: 60px;
+  background: -moz-linear-gradient(top, #FFF, #FFC778 30%, #F89174 60%,#87CEFA);
+  background: -webkit-linear-gradient(top, rgb(255, 255, 255), #FFC778 30%, #F89174 60%, #87CEFA);
+  background: linear-gradient(to bottom, rgb(255, 255, 255), #FFC778 30%, #F89174 60%,#87CEFA); 
+  position: fixed;
+  font-family: monospace;
+  text-decoration: none;
+  overflow: hidden;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  z-index: 1;
+  &__title{
+    margin-left: 20px;
+    width: 250px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  &__word{
+    font-size: 16px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: black;
+    &:hover{
+      cursor: pointer;
+      color:blueviolet
+    }
+  }
+  &__user-name{
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    margin: 0 20px 0 auto;
+  }
+  &__logout{
+    margin-right: 20px;
+    font-size: 14px;
+    font-family: monospace;
+    color: blueviolet;
+  }
+  &__login{
+    margin: 0 20px 0 auto;
+    font-size: 14px;
+    font-family: monospace;
+    color: blueviolet;
+  }
+ }
