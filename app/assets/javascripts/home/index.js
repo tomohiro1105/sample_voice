@@ -45,8 +45,6 @@ $(document).on('turbolinks:load', function(){
         getVideo();
       }
       else{content.textContent = text}; 
-  
-  
   } );
 
 
