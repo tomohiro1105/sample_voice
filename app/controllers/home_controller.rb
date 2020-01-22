@@ -2,7 +2,9 @@ class HomeController < ApplicationController
   before_action :move_to_sign_in
   before_action :set_word, only: [:edit, :update, :destroy]
   def index
+    gon.word = Word.where(user_id: current_user.id).includes(:user)
   end
+  
 
   def new
     @word = Word.new
