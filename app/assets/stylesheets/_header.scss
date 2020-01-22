@@ -37,6 +37,9 @@
     font-family: monospace;
     font-size: 15px;
     margin: 0 20px 0 auto;
+    &:hover{
+      cursor: pointer;
+    }
   }
   &__logout{
     margin-right: 20px;

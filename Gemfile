@@ -68,6 +68,7 @@ gem 'jquery-rails'
 gem 'julius'
 gem 'font_awesome5_rails'
 gem 'devise'
+gem 'gon'
 
 group :production do
   gem 'pg'
