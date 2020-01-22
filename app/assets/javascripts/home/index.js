@@ -48,7 +48,7 @@ $(document).on('turbolinks:load', function(){
         // 登録したキーワードとセットのURLを埋め込む
       function getUrl(){
         console.log(word.content_url)
-        var URL = `<iframe width="600" height="340" src="${word.content_url}" frameborder="0" allowfullscreen></iframe>`;
+        var URL = `<iframe width="1200" height="1000" src="${word.content_url}" frameborder="0" allowfullscreen></iframe>`;
         
         content.innerHTML = URL;
         
