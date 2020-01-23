@@ -56,4 +56,17 @@ $(document).on('turbolinks:load', function(){
     })
   } );
 
+
+
+  var info = document.getElementsByClassName('speak-content__infomation');
+  var infoBox = document.getElementsByClassName("speak-content__box");
+  var close = document.getElementsByClassName("speak-content__box__close")
+  $(info).on('click', function(){
+    $(infoBox).fadeIn();
+  });
+
+  $(close).on('click', function(){
+    $(infoBox).fadeOut();
+  });
+  
 });

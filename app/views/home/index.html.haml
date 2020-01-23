@@ -2,5 +2,27 @@
   .speak-content
     %h3.speak-content__name ボタンを押して話してみよう！
     %button.speak-content__btn#speak-content__btn PUSH
+    .speak-content__infomation
+      ※ 説明
+    .speak-content__box
+      1.PUSHボタンを押して好きな言葉を話してください。
+      %br/
+      2.正しく認識されればPUSHボタンの下部に話した文字
+      %br/
+      が現れます。
+      %br/
+      3.ページ上部の
+      %span.text-span ワード登録
+      から登録ページに移動して
+      %br/
+      先ほどの文字と、サイトのURLを登録してください。
+      %br/
+      4.TOP画面でもう一度PUSHボタンを押して、先ほど
+      %br/
+      登録した言葉を話すと、一緒に登録したURLのサイト
+      %br/
+      がボタン下部に現れるようになります。
+      = fa_icon "window-close", class:"speak-content__box__close"
+
     .speak-content__content#speak-content__content
   
